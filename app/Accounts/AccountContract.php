@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules;
+namespace App\Accounts;
 
 interface AccountContract
 {
@@ -8,6 +8,4 @@ interface AccountContract
     public function getBalance(): int;
     public function addBalance(int $balance): void;
     public function takeOfBalance(int $balance): void;
-    public function getTransactions(): array;
-    public function addTransaction(array $transaction): void;
 }
